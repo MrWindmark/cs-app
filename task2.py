@@ -7,10 +7,10 @@ def write_order_to_json(item, quantity, price, buyer, date):
         data = json.load(file)
 
     order = (item, quantity, price, buyer, date.isoformat())
-    data['orders'].append(json.dumps(order, indent=4))
+    data['orders'].append(json.dumps(order))
 
     with open('./files/orders.json', 'w', encoding='UTF-8') as file:
-        json.dump(data, file)
+        json.dump(data, file, indent=4)
 
 
 if __name__ == '__main__':
