@@ -8,7 +8,6 @@ def write_order_to_json(item, quantity, price, buyer, date):
 
     order = (item, quantity, price, buyer, date.isoformat())
     data['orders'].append(json.dumps(order, indent=4))
-    print(data)
 
     with open('./files/orders.json', 'w', encoding='UTF-8') as file:
         json.dump(data, file)
