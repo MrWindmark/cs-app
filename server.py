@@ -18,20 +18,25 @@ system_msg = [
 ]
 
 
-def server_start():
-    parser = argparse.ArgumentParser(description="Ping script")
+def server_start(testing=False) -> None:
+    try:
+        parser = argparse.ArgumentParser(description="Chat server")
 
-    parser.add_argument("-a", dest="ip", required=True)
-    parser.add_argument("-p", dest="port", default=7777, type=int)
+        parser.add_argument("-a", dest="ip", default='127.0.0.1', type=str)
+        parser.add_argument("-p", dest="port", default=7777, type=int)
 
-    args = parser.parse_args()
-    print(args)
+        args = parser.parse_args()
+        print(args)
+    except Exception as e:
+        print(e)
 
     server = socket(AF_INET, SOCK_STREAM)
     server.bind((args.ip, args.port))
     server.listen(5)
 
     while True:
+        if testing:
+            return
         client, addr = server.accept()
         data = client.recv(1000000)
         tmp = data.decode('utf-8')
