@@ -4,31 +4,6 @@ import json
 import argparse
 
 
-def start(_ip_address, _port):
-    username = input('Enter your username: ')
-    init_message = json.dumps(gen_presence_msg(username), indent=4, sort_keys=True, default=str)
-    server_ans = send_to_server(msg=init_message, server_ip=_ip_address, port=int(_port))
-    return server_ans.decode('utf-8')
-
-
-def connection_check(_ip_address, _port):
-    try:
-        if len(_ip_address.split('.')) == 4:
-            inet_aton(_ip_address)
-        else:
-            print('Incorrect IP. Check dots in IP-address and restart script')
-            return False
-    except error:
-        print('Incorrect IP. Restart script with correct address parameter')
-        return False
-
-    if str(_port).isdigit():
-        if int(_port) <= 0:
-            print('Incorrect Port. Restart script with correct Port parameter')
-            return False
-    return True
-
-
 def set_auth_msg(_username, _password):
     auth_msg = {
         "action": "authenticate",
@@ -59,6 +34,31 @@ def gen_presence_msg(_username):
 
 def get_logout_msg():
     return {"action": "quit"}
+
+
+def connection_check(_ip_address, _port):
+    try:
+        if len(_ip_address.split('.')) == 4:
+            inet_aton(_ip_address)
+        else:
+            print('Incorrect IP. Check dots in IP-address and restart script')
+            return False
+    except error:
+        print('Incorrect IP. Restart script with correct address parameter')
+        return False
+
+    if str(_port).isdigit():
+        if int(_port) <= 0:
+            print('Incorrect Port. Restart script with correct Port parameter')
+            return False
+    return True
+
+
+def start(_ip_address, _port):
+    username = input('Enter your username: ')
+    init_message = json.dumps(gen_presence_msg(username), indent=4, sort_keys=True, default=str)
+    server_ans = send_to_server(msg=init_message, server_ip=_ip_address, port=int(_port))
+    return server_ans.decode('utf-8')
 
 
 def send_to_server(msg, server_ip, port):
