@@ -1,36 +1,13 @@
 from datetime import datetime
-from sys import argv
 from socket import *
 import json
-
-auth_msg = {
-    "action": "authenticate",
-    "time": datetime.now(),
-    "user": {
-        "account_name": "",
-        "password": ""
-    }
-}
-
-presence_msg = {
-    "action": "presence",
-    "time": datetime.now(),
-    "type": "status",
-    "user": {
-        "account_name": "",
-        "status": "on-line"
-    }
-}
-
-logout_msg = {
-    "action": "quit"
-}
+import argparse
 
 
-def start():
+def start(_ip_address, _port):
     username = input('Enter your username: ')
     init_message = json.dumps(gen_presence_msg(username), indent=4, sort_keys=True, default=str)
-    server_ans = send_to_server(msg=init_message, server_ip=__addrss, port=int(__port))
+    server_ans = send_to_server(msg=init_message, server_ip=_ip_address, port=int(_port))
     return server_ans.decode('utf-8')
 
 
@@ -45,16 +22,43 @@ def connection_check(_ip_address, _port):
         print('Incorrect IP. Restart script with correct address parameter')
         return False
 
-    if _port.isdigit():
+    if str(_port).isdigit():
         if int(_port) <= 0:
             print('Incorrect Port. Restart script with correct Port parameter')
             return False
     return True
 
 
+def set_auth_msg(_username, _password):
+    auth_msg = {
+        "action": "authenticate",
+        "time": datetime.now(),
+        "user": {
+            "account_name": "",
+            "password": ""
+        }
+    }
+    auth_msg["user"]["account_name"] = _username
+    auth_msg["user"]["password"] = _password
+    return auth_msg
+
+
 def gen_presence_msg(_username):
+    presence_msg = {
+        "action": "presence",
+        "time": datetime.now(),
+        "type": "status",
+        "user": {
+            "account_name": "",
+            "status": "on-line"
+        }
+    }
     presence_msg["user"]["account_name"] = _username
     return presence_msg
+
+
+def get_logout_msg():
+    return {"action": "quit"}
 
 
 def send_to_server(msg, server_ip, port):
@@ -66,17 +70,15 @@ def send_to_server(msg, server_ip, port):
     return data
 
 
-if len(argv) > 2:
-    _, __addrss, __port = argv
-    print(__addrss, __port)
-elif len(argv) > 1:
-    _, __addrss = argv
-    __port = '7777'
-    print(__addrss, __port)
-else:
-    raise ValueError('No IP and Port parameters. Restart script with correct parameters')
-
 if __name__ == '__main__':
-    if connection_check(__addrss, __port):
-        job_status = start()
+    parser = argparse.ArgumentParser(description="Ping script")
+
+    parser.add_argument("-a", dest="ip", required=True)
+    parser.add_argument("-p", dest="port", default=7777, type=int)
+
+    args = parser.parse_args()
+    print(args)
+
+    if connection_check(args.ip, args.port):
+        job_status = start(args.ip, args.port)
         print(job_status)
