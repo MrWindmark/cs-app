@@ -1,6 +1,9 @@
 import argparse
 import json
 from socket import *
+from log.server_log_config import create_logger
+
+my_log = create_logger()
 
 system_msg = [
     {
@@ -26,9 +29,9 @@ def server_start(testing=False) -> None:
         parser.add_argument("-p", dest="port", default=7777, type=int)
 
         args = parser.parse_args()
-        print(args)
+        my_log.debug('On start parsed args: %s', args)
     except Exception as e:
-        print(e)
+        my_log.error(e)
 
     server = socket(AF_INET, SOCK_STREAM)
     server.bind((args.ip, args.port))
@@ -40,7 +43,7 @@ def server_start(testing=False) -> None:
         client, addr = server.accept()
         data = client.recv(1000000)
         tmp = data.decode('utf-8')
-        print(tmp)
+        my_log.info('Received data:', tmp)
         system_msg[0]['alert'] = 'Greetings!'
         ans_msg = json.dumps(system_msg[0], indent=4, sort_keys=True, default=str)
         client.send(ans_msg.encode('utf-8'))

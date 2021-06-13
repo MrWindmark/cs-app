@@ -2,6 +2,10 @@ from datetime import datetime
 from socket import *
 import json
 import argparse
+from log.client_log_config import create_logger
+
+
+my_log = create_logger()
 
 
 def set_auth_msg(_username: str, _password: str):
@@ -41,15 +45,15 @@ def connection_check(_ip_address: str, _port: int):
         if len(_ip_address.split('.')) == 4:
             inet_aton(_ip_address)
         else:
-            print('Incorrect IP. Check dots in IP-address and restart script')
+            my_log.error('Incorrect IP. Check dots in IP-address and restart script')
             return False
     except error:
-        print('Incorrect IP. Restart script with correct address parameter')
+        my_log.error('Incorrect IP. Restart script with correct address parameter')
         return False
 
     if str(_port).isdigit():
         if int(_port) <= 1023:
-            print('Incorrect Port. Restart script with correct Port parameter')
+            my_log.error('Incorrect Port. Restart script with correct Port parameter')
             return False
     return True
 
@@ -66,7 +70,7 @@ def send_to_server(msg: str, server_ip: str, port: int):
     s.connect((server_ip, port))  # Соединиться с сервером
     s.send(msg.encode('utf-8'))
     data = s.recv(1000000)
-    print(data)
+    my_log.debug(data)
     s.close()
     return data
 
@@ -78,8 +82,8 @@ if __name__ == '__main__':
     parser.add_argument("-p", dest="port", default=7777, type=int)
 
     args = parser.parse_args()
-    print(args)
+    my_log.debug(args)
 
     if connection_check(args.ip, args.port):
         job_status = start(args.ip, args.port)
-        print(job_status)
+        my_log.info(job_status)
