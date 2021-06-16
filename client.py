@@ -3,7 +3,7 @@ from socket import *
 import json
 import argparse
 from log.client_log_config import create_logger
-
+from log.client_log_config import debug_logger
 
 my_log = create_logger()
 
@@ -22,20 +22,21 @@ def set_auth_msg(_username: str, _password: str):
     return auth_msg
 
 
+@debug_logger
 def gen_presence_msg(_username: str):
     presence_msg = {
         "action": "presence",
         "time": datetime.now().strftime('%m/%d/%y %H:%M:%S'),
         "type": "status",
         "user": {
-            "account_name": "",
+            "account_name": _username,
             "status": "on-line"
         }
     }
-    presence_msg["user"]["account_name"] = _username
     return presence_msg
 
 
+@debug_logger
 def get_logout_msg():
     return {"action": "quit"}
 
@@ -58,6 +59,7 @@ def connection_check(_ip_address: str, _port: int):
     return True
 
 
+@debug_logger
 def start(_ip_address: str, _port: int):
     username = input('Enter your username: ')
     init_message = json.dumps(gen_presence_msg(username), indent=4, sort_keys=True, default=str)
@@ -65,12 +67,13 @@ def start(_ip_address: str, _port: int):
     return server_ans.decode('utf-8')
 
 
+@debug_logger
 def send_to_server(msg: str, server_ip: str, port: int):
     s = socket(AF_INET, SOCK_STREAM)  # Создать сокет TCP
     s.connect((server_ip, port))  # Соединиться с сервером
     s.send(msg.encode('utf-8'))
     data = s.recv(1000000)
-    my_log.debug(data)
+    # my_log.debug(data)
     s.close()
     return data
 
@@ -82,8 +85,8 @@ if __name__ == '__main__':
     parser.add_argument("-p", dest="port", default=7777, type=int)
 
     args = parser.parse_args()
-    my_log.debug(args)
+    # my_log.debug(args)
 
     if connection_check(args.ip, args.port):
         job_status = start(args.ip, args.port)
-        my_log.info(job_status)
+        # my_log.info(job_status)

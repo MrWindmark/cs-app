@@ -1,5 +1,6 @@
 import logging
 import os
+from functools import wraps
 from logging.handlers import TimedRotatingFileHandler
 
 
@@ -16,6 +17,13 @@ def create_logger():
         log.handlers.clear()
     log.addHandler(handler)
     return log
+
+
+def server_logger(func):
+    logger = create_logger()
+    @wraps(func)
+    def call_func(*args, **kwargs):
+        logger.debug(f'')
 
 
 if __name__ == '__main__':

@@ -1,2 +1,1 @@
-2021-06-15 21:11:33,483 - app.server - DEBUG - On start parsed args: Namespace(ip='127.0.0.1', port=7790)
-2021-06-15 21:23:19,712 - app.server - DEBUG - On start parsed args: Namespace(ip='127.0.0.1', port=7777)
+2021-06-16 22:44:16,521 - app.server - DEBUG - On start parsed args: Namespace(ip='127.0.0.1', port=7777)
