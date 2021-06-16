@@ -3,7 +3,7 @@ from socket import *
 import json
 import argparse
 from log.client_log_config import create_logger
-from log.client_log_config import debug_logger
+from log.client_log_config import log
 
 my_log = create_logger()
 
@@ -22,7 +22,7 @@ def set_auth_msg(_username: str, _password: str):
     return auth_msg
 
 
-@debug_logger
+@log
 def gen_presence_msg(_username: str):
     presence_msg = {
         "action": "presence",
@@ -36,7 +36,7 @@ def gen_presence_msg(_username: str):
     return presence_msg
 
 
-@debug_logger
+@log
 def get_logout_msg():
     return {"action": "quit"}
 
@@ -59,7 +59,7 @@ def connection_check(_ip_address: str, _port: int):
     return True
 
 
-@debug_logger
+@log
 def start(_ip_address: str, _port: int):
     username = input('Enter your username: ')
     init_message = json.dumps(gen_presence_msg(username), indent=4, sort_keys=True, default=str)
@@ -67,7 +67,7 @@ def start(_ip_address: str, _port: int):
     return server_ans.decode('utf-8')
 
 
-@debug_logger
+@log
 def send_to_server(msg: str, server_ip: str, port: int):
     s = socket(AF_INET, SOCK_STREAM)  # Создать сокет TCP
     s.connect((server_ip, port))  # Соединиться с сервером

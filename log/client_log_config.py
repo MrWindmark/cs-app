@@ -17,14 +17,14 @@ def create_logger():
     return logging.getLogger('app.client')
 
 
-def debug_logger(func):
-    log = create_logger()
+def log(func):
+    logger = create_logger()
 
     @wraps(func)
     def call_func(*args, **kwargs):
-        log.debug(f'Function "{func.__name__}()" called with: {args}, {kwargs} - from "{inspect.stack()[1][3]}"')
+        logger.debug(f'Function "{func.__name__}()" called with: {args}, {kwargs} - from "{inspect.stack()[1][3]}"')
         temp = func(*args, **kwargs)
-        log.debug(f'Function {func.__name__} return: {temp}')
+        logger.debug(f'Function "{func.__name__}()" return: {temp}')
         return temp
     return call_func
 
