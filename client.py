@@ -2,6 +2,8 @@ from datetime import datetime
 from socket import *
 import json
 import argparse
+from time import sleep
+
 from log.client_log_config import create_logger
 from log.client_log_config import log
 
@@ -37,6 +39,21 @@ def gen_presence_msg(_username: str):
 
 
 @log
+def gen_text_msg(_username: str, _message: str):
+    presence_msg = {
+        "action": "message",
+        "time": datetime.now().strftime('%m/%d/%y %H:%M:%S'),
+        "type": "status",
+        "user": {
+            "account_name": _username,
+            "status": "on-line"
+        },
+        "message": _message
+    }
+    return presence_msg
+
+
+@log
 def get_logout_msg():
     return {"action": "quit"}
 
@@ -62,26 +79,44 @@ def connection_check(_ip_address: str, _port: int):
 @log
 def start(_ip_address: str, _port: int):
     username = input('Enter your username: ')
-    init_message = json.dumps(gen_presence_msg(username), indent=4, sort_keys=True, default=str)
-    server_ans = send_to_server(msg=init_message, server_ip=_ip_address, port=int(_port))
-    return server_ans.decode('utf-8')
+    client_type = input('Enter "r" if you are reader or "w" if you are writer: ')
+    if client_type == 'r' or client_type == 'R':
+        read_from_server(username, _ip_address, _port)
+    else:
+        write_to_server(username, _ip_address, _port)
 
 
-@log
-def send_to_server(msg: str, server_ip: str, port: int):
+def read_from_server(username: str, server_ip: str, port: int):
     s = socket(AF_INET, SOCK_STREAM)  # Создать сокет TCP
     s.connect((server_ip, port))  # Соединиться с сервером
-    s.send(msg.encode('utf-8'))
-    data = s.recv(1000000)
-    # my_log.debug(data)
-    s.close()
-    return data
+    msg = gen_presence_msg(username)
+    tmp = json.dumps(msg, indent=4, sort_keys=True, default=str)
+    s.send(tmp.encode('UTF-8'))
+    while True:
+        try:
+            print('In work')
+            sleep(2)
+            tm = s.recv(1000000)
+            print("Получено: %s" % tm.decode('utf-8'))
+        except Exception as e:
+            pass
+
+
+def write_to_server(username: str, server_ip: str, port: int):
+    s = socket(AF_INET, SOCK_STREAM)  # Создать сокет TCP
+    s.connect((server_ip, port))  # Соединиться с сервером
+    while True:
+        message = input('Enter you message: ')
+        if message == 'exit':
+            break
+        data = json.dumps(gen_text_msg(username, message), indent=4, sort_keys=True, default=str)
+        s.send(data.encode('utf-8'))
 
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Ping script")
 
-    parser.add_argument("-a", dest="ip", required=True)
+    parser.add_argument("-a", dest="ip", default='127.0.0.1', required=False)
     parser.add_argument("-p", dest="port", default=7777, type=int)
 
     args = parser.parse_args()

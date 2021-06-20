@@ -1,1 +1,0 @@
-2021-06-16 22:44:16,521 - app.server - DEBUG - On start parsed args: Namespace(ip='127.0.0.1', port=7777)

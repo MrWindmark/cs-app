@@ -2,8 +2,8 @@ import pytest
 
 
 def pytest_addoption(parser):
-    parser.addoption("-a", action="store")
-    parser.addoption("-p", action="store")
+    parser.addoption("-Adress", action="store", default="127.0.0.1", dest="ip")
+    parser.addoption("-Port", action="store", default=7777, dest="port")
 
 
 @pytest.fixture(scope='session')
