@@ -1,0 +1,26 @@
+2021-06-20 23:44:50,216 - app.server - DEBUG - On start parsed args: Namespace(ip='127.0.0.1', port=7788)
+2021-06-20 23:45:10,635 - app.server - DEBUG - We receive b'{\n    "action": "presence",\n    "time": "06/20/21 23:45:04",\n    "type": "status",\n    "user": {\n        "account_name": "reader",\n        "status": "on-line"\n    }\n}' with type <class 'bytes'> and len 166
+2021-06-20 23:51:46,063 - app.server - DEBUG - On start parsed args: Namespace(ip='127.0.0.1', port=7788)
+2021-06-20 23:51:56,271 - app.server - DEBUG - We receive b'{\n    "action": "presence",\n    "time": "06/20/21 23:51:51",\n    "type": "status",\n    "user": {\n        "account_name": "reader",\n        "status": "on-line"\n    }\n}' with type <class 'bytes'> and len 166
+2021-06-20 23:52:36,329 - app.server - DEBUG - We receive b'{\n    "action": "message",\n    "message": "hi",\n    "time": "06/20/21 23:52:19",\n    "type": "status",\n    "user": {\n        "account_name": "test1",\n        "status": "on-line"\n    }\n}' with type <class 'bytes'> and len 185
+2021-06-20 23:53:58,680 - app.server - DEBUG - On start parsed args: Namespace(ip='127.0.0.1', port=7788)
+2021-06-20 23:54:01,918 - app.server - DEBUG - On start parsed args: Namespace(ip='127.0.0.1', port=7777)
+2021-06-20 23:54:12,127 - app.server - DEBUG - We receive b'{\n    "action": "presence",\n    "time": "06/20/21 23:54:10",\n    "type": "status",\n    "user": {\n        "account_name": "reader\\\\",\n        "status": "on-line"\n    }\n}' with type <class 'bytes'> and len 168
+2021-06-20 23:55:01,322 - app.server - DEBUG - We receive b'{\n    "action": "message",\n    "message": "1w",\n    "time": "06/20/21 23:54:20",\n    "type": "status",\n    "user": {\n        "account_name": "test",\n        "status": "on-line"\n    }\n}' with type <class 'bytes'> and len 184
+2021-06-20 23:55:53,690 - app.server - DEBUG - We receive b'{\n    "action": "message",\n    "message": "ge",\n    "time": "06/20/21 23:55:53",\n    "type": "status",\n    "user": {\n        "account_name": "test",\n        "status": "on-line"\n    }\n}' with type <class 'bytes'> and len 184
+2021-06-20 23:56:59,438 - app.server - DEBUG - We receive b'{\n    "action": "presence",\n    "time": "06/20/21 23:55:10",\n    "type": "status",\n    "user": {\n        "account_name": "reader",\n        "status": "on-line"\n    }\n}' with type <class 'bytes'> and len 166
+2021-06-20 23:56:59,438 - app.server - DEBUG - We receive b'{\n    "action": "presence",\n    "time": "06/20/21 23:55:43",\n    "type": "status",\n    "user": {\n        "account_name": "reader",\n        "status": "on-line"\n    }\n}' with type <class 'bytes'> and len 166
+2021-06-20 23:57:38,536 - app.server - DEBUG - On start parsed args: Namespace(ip='127.0.0.1', port=7777)
+2021-06-20 23:58:09,163 - app.server - DEBUG - We receive b'{\n    "action": "message",\n    "message": "hi",\n    "time": "06/20/21 23:58:06",\n    "type": "status",\n    "user": {\n        "account_name": "test",\n        "status": "on-line"\n    }\n}' with type <class 'bytes'> and len 184
+2021-06-21 00:00:15,392 - app.server - DEBUG - On start parsed args: Namespace(ip='127.0.0.1', port=7777)
+2021-06-21 00:01:50,068 - app.server - DEBUG - On start parsed args: Namespace(ip='127.0.0.1', port=7777)
+2021-06-21 00:01:54,002 - app.server - DEBUG - On start parsed args: Namespace(ip='127.0.0.1', port=7778)
+2021-06-21 00:02:44,932 - app.server - DEBUG - We receive b'{\n    "action": "message",\n    "message": "hi",\n    "time": "06/21/21 00:02:44",\n    "type": "status",\n    "user": {\n        "account_name": "test",\n        "status": "on-line"\n    }\n}' with type <class 'bytes'> and len 184
+2021-06-21 00:04:25,172 - app.server - DEBUG - On start parsed args: Namespace(ip='127.0.0.1', port=7778)
+2021-06-21 00:04:27,843 - app.server - DEBUG - On start parsed args: Namespace(ip='127.0.0.1', port=7777)
+2021-06-21 00:04:48,257 - app.server - DEBUG - We receive b'{\n    "action": "presence",\n    "time": "06/21/21 00:04:39",\n    "type": "status",\n    "user": {\n        "account_name": "reader",\n        "status": "on-line"\n    }\n}' with type <class 'bytes'> and len 166
+2021-06-21 00:06:30,349 - app.server - DEBUG - We receive b'{\n    "action": "message",\n    "message": "test",\n    "time": "06/21/21 00:04:51",\n    "type": "status",\n    "user": {\n        "account_name": "test",\n        "status": "on-line"\n    }\n}' with type <class 'bytes'> and len 186
+2021-06-21 00:06:38,333 - app.server - DEBUG - On start parsed args: Namespace(ip='127.0.0.1', port=7777)
+2021-06-21 00:06:40,840 - app.server - DEBUG - On start parsed args: Namespace(ip='127.0.0.1', port=7700)
+2021-06-21 00:07:01,260 - app.server - DEBUG - We receive b'{\n    "action": "message",\n    "message": "test",\n    "time": "06/21/21 00:06:53",\n    "type": "status",\n    "user": {\n        "account_name": "\\u0435\\u0443test",\n        "status": "on-line"\n    }\n}' with type <class 'bytes'> and len 198
+2021-06-21 00:08:50,390 - app.server - DEBUG - We receive b'{\n    "action": "presence",\n    "time": "06/21/21 00:08:50",\n    "type": "status",\n    "user": {\n        "account_name": "read",\n        "status": "on-line"\n    }\n}' with type <class 'bytes'> and len 164
