@@ -49,7 +49,6 @@ def server_start(testing=False) -> None:
         my_log.error(e)
 
     clients = []
-    messages = []
     server = create_socket(args.ip, args.port)
 
     while True:
@@ -64,6 +63,7 @@ def server_start(testing=False) -> None:
             print("Получен запрос на соединение с %s" % str(addr))
             clients.append(client)
         finally:
+            messages = []
             r = []
             w = []
             print(clients)
@@ -72,18 +72,16 @@ def server_start(testing=False) -> None:
             except Exception as er:
                 # Some client disconnect. Ignore that
                 pass
-            for connected_client in r:
-                print("Читающий %s" % str(addr))
-                for item in messages:
-                    try:
-                        connected_client.send(item.encode('utf-8'))
-                        messages.remove(item)
-                    except Exception as e:
-                        clients.remove(connected_client)
 
             for connected_client in w:
                 print("Пишущий %s" % str(addr))
                 data = connected_client.recv(1000000)
+                for item in messages:
+                    try:
+                        connected_client.send(item.encode('utf-8'))
+                    except Exception as e:
+                        clients.remove(connected_client)
+
                 if data.decode('UTF-8') != '':
                     my_log.debug(f'We receive {data} with type {type(data)} and len {len(data)}')
                     message = json.loads(data)
@@ -97,6 +95,7 @@ def server_start(testing=False) -> None:
                             clients.remove(connected_client)
                     elif message["action"] == "message":
                         messages.append(message['message'])
+
 
 
 if __name__ == '__main__':

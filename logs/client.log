@@ -44,3 +44,10 @@
 2021-06-21 00:08:46,757 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7700), {} - from "<module>"
 2021-06-21 00:08:50,388 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('read',), {} - from "read_from_server"
 2021-06-21 00:08:50,389 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/21/21 00:08:50', 'type': 'status', 'user': {'account_name': 'read', 'status': 'on-line'}}
+2021-06-21 00:21:14,254 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7777), {} - from "<module>"
+2021-06-21 00:21:23,417 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('куфreader',), {} - from "read_from_server"
+2021-06-21 00:21:23,417 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/21/21 00:21:23', 'type': 'status', 'user': {'account_name': 'куфreader', 'status': 'on-line'}}
+2021-06-21 00:23:59,333 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7700), {} - from "<module>"
+2021-06-21 00:25:22,909 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7700), {} - from "<module>"
+2021-06-21 00:25:26,408 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('reader',), {} - from "read_from_server"
+2021-06-21 00:25:26,408 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/21/21 00:25:26', 'type': 'status', 'user': {'account_name': 'reader', 'status': 'on-line'}}
