@@ -2,6 +2,7 @@ from datetime import datetime
 from socket import *
 import json
 import argparse
+from threading import Thread
 from time import sleep
 
 from log.client_log_config import create_logger
@@ -79,11 +80,10 @@ def connection_check(_ip_address: str, _port: int):
 @log
 def start(_ip_address: str, _port: int):
     username = input('Enter your username: ')
-    client_type = input('Enter "r" if you are reader or "w" if you are writer: ')
-    if client_type == 'r' or client_type == 'R':
-        read_from_server(username, _ip_address, _port)
-    else:
-        write_to_server(username, _ip_address, _port)
+    r_thread = Thread(target=read_from_server, args=(username, _ip_address, _port))
+    w_thread = Thread(target=write_to_server, args=(username, _ip_address, _port))
+    r_thread.start()
+    w_thread.start()
 
 
 def read_from_server(username: str, server_ip: str, port: int):
