@@ -29,7 +29,7 @@ def create_socket(ip: str, port: int):
     """
     server = socket(AF_INET, SOCK_STREAM)
     server.bind((ip, port))
-    server.settimeout(0.2)
+    server.settimeout(5)
     server.listen(5)
     return server
 
@@ -49,6 +49,7 @@ def server_start(testing=False) -> None:
         my_log.error(e)
 
     clients = []
+    messages = []
     server = create_socket(args.ip, args.port)
 
     while True:
@@ -63,39 +64,43 @@ def server_start(testing=False) -> None:
             print("Получен запрос на соединение с %s" % str(addr))
             clients.append(client)
         finally:
-            messages = []
-            r = []
-            w = []
-            print(clients)
             try:
-                r, w, e = select.select(clients, clients, [], 10)
+                reads, send, excepts = select.select(clients, clients, [], 0)
             except Exception as er:
                 # Some client disconnect. Ignore that
                 pass
-
-            for connected_client in w:
-                print("Пишущий %s" % str(addr))
-                data = connected_client.recv(1000000)
-                for item in messages:
+            finally:
+                for connected_client in reads:
+                    data = ''
                     try:
-                        connected_client.send(item.encode('utf-8'))
+                        connected_client.settimeout(1)
+                        data = connected_client.recv(1024)
                     except Exception as e:
-                        clients.remove(connected_client)
+                        pass
+                    finally:
+                        if data:
+                            my_log.debug(f'We receive {data} with type {type(data)} and len {len(data)}')
+                            message = json.loads(data)
 
-                if data.decode('UTF-8') != '':
-                    my_log.debug(f'We receive {data} with type {type(data)} and len {len(data)}')
-                    message = json.loads(data)
+                            if message["action"] == "presence":
+                                __system_msg[0]['alert'] = 'You are in list'
+                                ans_msg = json.dumps(__system_msg[0], indent=4, sort_keys=True, default=str)
+                                try:
+                                    connected_client.send(ans_msg.encode('utf-8'))
+                                except Exception as e:
+                                    clients.remove(connected_client)
+                            elif message["action"] == "message":
+                                messages.append(message)
 
-                    if message["action"] == "presence":
-                        __system_msg[0]['alert'] = 'Greetings!!'
-                        ans_msg = json.dumps(__system_msg[0], indent=4, sort_keys=True, default=str)
+                for connected_client in send:
+                    for item in messages:
                         try:
+                            my_log.debug(f'We send {item} with type {type(item)} and len {len(item)}')
+                            ans_msg = json.dumps(item, indent=4, sort_keys=True, default=str)
                             connected_client.send(ans_msg.encode('utf-8'))
                         except Exception as e:
-                            clients.remove(connected_client)
-                    elif message["action"] == "message":
-                        messages.append(message['message'])
-
+                            pass
+                messages.clear()
 
 
 if __name__ == '__main__':

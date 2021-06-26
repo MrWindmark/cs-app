@@ -51,3 +51,625 @@
 2021-06-21 00:25:22,909 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7700), {} - from "<module>"
 2021-06-21 00:25:26,408 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('reader',), {} - from "read_from_server"
 2021-06-21 00:25:26,408 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/21/21 00:25:26', 'type': 'status', 'user': {'account_name': 'reader', 'status': 'on-line'}}
+2021-06-26 14:37:50,687 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7700), {} - from "<module>"
+2021-06-26 14:37:53,519 - app.client - DEBUG - Function "start()" return: None
+2021-06-26 14:37:53,521 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('Test1',), {} - from "read_from_server"
+2021-06-26 14:37:53,521 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 14:37:53', 'type': 'status', 'user': {'account_name': 'Test1', 'status': 'on-line'}}
+2021-06-26 14:38:07,932 - app.client - DEBUG - Function "gen_text_msg()" called with: ('Test1', 'Hello'), {} - from "write_to_server"
+2021-06-26 14:38:07,932 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 14:38:07', 'type': 'status', 'user': {'account_name': 'Test1', 'status': 'on-line'}, 'message': 'Hello'}
+2021-06-26 14:38:11,362 - app.client - DEBUG - Function "gen_text_msg()" called with: ('Test1', 'there'), {} - from "write_to_server"
+2021-06-26 14:38:11,362 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 14:38:11', 'type': 'status', 'user': {'account_name': 'Test1', 'status': 'on-line'}, 'message': 'there'}
+2021-06-26 14:38:49,481 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7777), {} - from "<module>"
+2021-06-26 14:38:51,819 - app.client - DEBUG - Function "start()" return: None
+2021-06-26 14:38:51,820 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('Test1',), {} - from "read_from_server"
+2021-06-26 14:38:51,820 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 14:38:51', 'type': 'status', 'user': {'account_name': 'Test1', 'status': 'on-line'}}
+2021-06-26 14:38:55,275 - app.client - DEBUG - Function "gen_text_msg()" called with: ('Test1', 'test'), {} - from "write_to_server"
+2021-06-26 14:38:55,275 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 14:38:55', 'type': 'status', 'user': {'account_name': 'Test1', 'status': 'on-line'}, 'message': 'test'}
+2021-06-26 14:39:03,043 - app.client - DEBUG - Function "gen_text_msg()" called with: ('Test1', 'hi'), {} - from "write_to_server"
+2021-06-26 14:39:03,043 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 14:39:03', 'type': 'status', 'user': {'account_name': 'Test1', 'status': 'on-line'}, 'message': 'hi'}
+2021-06-26 14:39:15,678 - app.client - DEBUG - Function "gen_text_msg()" called with: ('Test1', 'hi again'), {} - from "write_to_server"
+2021-06-26 14:39:15,678 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 14:39:15', 'type': 'status', 'user': {'account_name': 'Test1', 'status': 'on-line'}, 'message': 'hi again'}
+2021-06-26 14:39:51,531 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7777), {} - from "<module>"
+2021-06-26 14:39:53,503 - app.client - DEBUG - Function "start()" return: None
+2021-06-26 14:39:53,504 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('Test2',), {} - from "read_from_server"
+2021-06-26 14:39:53,504 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 14:39:53', 'type': 'status', 'user': {'account_name': 'Test2', 'status': 'on-line'}}
+2021-06-26 14:40:40,453 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7777), {} - from "<module>"
+2021-06-26 14:40:42,765 - app.client - DEBUG - Function "start()" return: None
+2021-06-26 14:40:42,766 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('Test1',), {} - from "read_from_server"
+2021-06-26 14:40:42,766 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 14:40:42', 'type': 'status', 'user': {'account_name': 'Test1', 'status': 'on-line'}}
+2021-06-26 14:40:50,848 - app.client - DEBUG - Function "gen_text_msg()" called with: ('Test1', 'test'), {} - from "write_to_server"
+2021-06-26 14:40:50,848 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 14:40:50', 'type': 'status', 'user': {'account_name': 'Test1', 'status': 'on-line'}, 'message': 'test'}
+2021-06-26 14:41:36,770 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7777), {} - from "<module>"
+2021-06-26 14:41:39,019 - app.client - DEBUG - Function "start()" return: None
+2021-06-26 14:41:39,020 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('Test1',), {} - from "read_from_server"
+2021-06-26 14:41:39,020 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 14:41:39', 'type': 'status', 'user': {'account_name': 'Test1', 'status': 'on-line'}}
+2021-06-26 14:41:50,705 - app.client - DEBUG - Function "gen_text_msg()" called with: ('Test1', 'test'), {} - from "write_to_server"
+2021-06-26 14:41:50,705 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 14:41:50', 'type': 'status', 'user': {'account_name': 'Test1', 'status': 'on-line'}, 'message': 'test'}
+2021-06-26 14:46:04,457 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7777), {} - from "<module>"
+2021-06-26 14:46:06,389 - app.client - DEBUG - Function "start()" return: None
+2021-06-26 14:46:06,389 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('еуые1',), {} - from "read_from_server"
+2021-06-26 14:46:06,390 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 14:46:06', 'type': 'status', 'user': {'account_name': 'еуые1', 'status': 'on-line'}}
+2021-06-26 14:46:08,617 - app.client - DEBUG - Function "gen_text_msg()" called with: ('еуые1', 'рш'), {} - from "write_to_server"
+2021-06-26 14:46:08,617 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 14:46:08', 'type': 'status', 'user': {'account_name': 'еуые1', 'status': 'on-line'}, 'message': 'рш'}
+2021-06-26 14:46:10,077 - app.client - DEBUG - Function "gen_text_msg()" called with: ('еуые1', 'hi'), {} - from "write_to_server"
+2021-06-26 14:46:10,077 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 14:46:10', 'type': 'status', 'user': {'account_name': 'еуые1', 'status': 'on-line'}, 'message': 'hi'}
+2021-06-26 14:46:12,466 - app.client - DEBUG - Function "gen_text_msg()" called with: ('еуые1', 'hello'), {} - from "write_to_server"
+2021-06-26 14:46:12,466 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 14:46:12', 'type': 'status', 'user': {'account_name': 'еуые1', 'status': 'on-line'}, 'message': 'hello'}
+2021-06-26 14:49:09,035 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7777), {} - from "<module>"
+2021-06-26 14:49:11,414 - app.client - DEBUG - Function "start()" return: None
+2021-06-26 14:49:11,414 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test1',), {} - from "read_from_server"
+2021-06-26 14:49:11,414 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 14:49:11', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}}
+2021-06-26 14:49:22,065 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', 'hello'), {} - from "write_to_server"
+2021-06-26 14:49:22,065 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 14:49:22', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': 'hello'}
+2021-06-26 14:49:32,122 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', 'hi'), {} - from "write_to_server"
+2021-06-26 14:49:32,122 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 14:49:32', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': 'hi'}
+2021-06-26 14:49:40,604 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', 'where is the answer?!'), {} - from "write_to_server"
+2021-06-26 14:49:40,604 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 14:49:40', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': 'where is the answer?!'}
+2021-06-26 14:52:34,334 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7777), {} - from "<module>"
+2021-06-26 14:52:36,228 - app.client - DEBUG - Function "start()" return: None
+2021-06-26 14:52:36,229 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test1',), {} - from "read_from_server"
+2021-06-26 14:52:36,229 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 14:52:36', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}}
+2021-06-26 14:52:43,180 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', 'hi'), {} - from "write_to_server"
+2021-06-26 14:52:43,181 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 14:52:43', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': 'hi'}
+2021-06-26 14:52:45,429 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', ''), {} - from "write_to_server"
+2021-06-26 14:52:45,430 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 14:52:45', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': ''}
+2021-06-26 14:52:46,658 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', '1'), {} - from "write_to_server"
+2021-06-26 14:52:46,658 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 14:52:46', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': '1'}
+2021-06-26 14:52:47,003 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', '2'), {} - from "write_to_server"
+2021-06-26 14:52:47,003 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 14:52:47', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': '2'}
+2021-06-26 14:52:47,426 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', '3'), {} - from "write_to_server"
+2021-06-26 14:52:47,427 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 14:52:47', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': '3'}
+2021-06-26 14:52:47,782 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', '4'), {} - from "write_to_server"
+2021-06-26 14:52:47,782 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 14:52:47', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': '4'}
+2021-06-26 14:55:10,771 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7777), {} - from "<module>"
+2021-06-26 14:55:13,604 - app.client - DEBUG - Function "start()" return: None
+2021-06-26 14:55:13,605 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test1',), {} - from "read_from_server"
+2021-06-26 14:55:13,605 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 14:55:13', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}}
+2021-06-26 14:55:15,397 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', 'hi'), {} - from "write_to_server"
+2021-06-26 14:55:15,397 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 14:55:15', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': 'hi'}
+2021-06-26 14:55:21,857 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', 'check'), {} - from "write_to_server"
+2021-06-26 14:55:21,857 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 14:55:21', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': 'check'}
+2021-06-26 14:55:25,207 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', 'check'), {} - from "write_to_server"
+2021-06-26 14:55:25,207 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 14:55:25', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': 'check'}
+2021-06-26 14:56:04,537 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7777), {} - from "<module>"
+2021-06-26 14:56:06,670 - app.client - DEBUG - Function "start()" return: None
+2021-06-26 14:56:06,670 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test2',), {} - from "read_from_server"
+2021-06-26 14:56:06,670 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 14:56:06', 'type': 'status', 'user': {'account_name': 'test2', 'status': 'on-line'}}
+2021-06-26 14:56:08,771 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test2', 'hi'), {} - from "write_to_server"
+2021-06-26 14:56:08,771 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 14:56:08', 'type': 'status', 'user': {'account_name': 'test2', 'status': 'on-line'}, 'message': 'hi'}
+2021-06-26 14:56:14,309 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test2', "it's me"), {} - from "write_to_server"
+2021-06-26 14:56:14,309 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 14:56:14', 'type': 'status', 'user': {'account_name': 'test2', 'status': 'on-line'}, 'message': "it's me"}
+2021-06-26 14:56:16,845 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test2', 'Mario'), {} - from "write_to_server"
+2021-06-26 14:56:16,845 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 14:56:16', 'type': 'status', 'user': {'account_name': 'test2', 'status': 'on-line'}, 'message': 'Mario'}
+2021-06-26 14:57:26,113 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7778), {} - from "<module>"
+2021-06-26 14:57:33,702 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7778), {} - from "<module>"
+2021-06-26 14:57:39,747 - app.client - DEBUG - Function "start()" return: None
+2021-06-26 14:57:39,748 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test1',), {} - from "read_from_server"
+2021-06-26 14:57:39,748 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 14:57:39', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}}
+2021-06-26 14:57:43,145 - app.client - DEBUG - Function "start()" return: None
+2021-06-26 14:57:43,146 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test2',), {} - from "read_from_server"
+2021-06-26 14:57:43,146 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 14:57:43', 'type': 'status', 'user': {'account_name': 'test2', 'status': 'on-line'}}
+2021-06-26 14:57:47,121 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', 'hi'), {} - from "write_to_server"
+2021-06-26 14:57:47,121 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 14:57:47', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': 'hi'}
+2021-06-26 14:57:51,430 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test2', 'hello'), {} - from "write_to_server"
+2021-06-26 14:57:51,430 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 14:57:51', 'type': 'status', 'user': {'account_name': 'test2', 'status': 'on-line'}, 'message': 'hello'}
+2021-06-26 14:59:28,419 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7777), {} - from "<module>"
+2021-06-26 14:59:30,584 - app.client - DEBUG - Function "start()" return: None
+2021-06-26 14:59:30,585 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test1',), {} - from "read_from_server"
+2021-06-26 14:59:30,585 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 14:59:30', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}}
+2021-06-26 14:59:31,771 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', 'hi'), {} - from "write_to_server"
+2021-06-26 14:59:31,771 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 14:59:31', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': 'hi'}
+2021-06-26 14:59:34,796 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', 'me'), {} - from "write_to_server"
+2021-06-26 14:59:34,796 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 14:59:34', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': 'me'}
+2021-06-26 14:59:44,430 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', 'hi'), {} - from "write_to_server"
+2021-06-26 14:59:44,430 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 14:59:44', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': 'hi'}
+2021-06-26 15:02:14,617 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7778), {} - from "<module>"
+2021-06-26 15:02:18,389 - app.client - DEBUG - Function "start()" return: None
+2021-06-26 15:02:18,390 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('tester',), {} - from "read_from_server"
+2021-06-26 15:02:18,390 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 15:02:18', 'type': 'status', 'user': {'account_name': 'tester', 'status': 'on-line'}}
+2021-06-26 15:02:24,670 - app.client - DEBUG - Function "gen_text_msg()" called with: ('tester', 'hello'), {} - from "write_to_server"
+2021-06-26 15:02:24,670 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 15:02:24', 'type': 'status', 'user': {'account_name': 'tester', 'status': 'on-line'}, 'message': 'hello'}
+2021-06-26 15:04:19,815 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7777), {} - from "<module>"
+2021-06-26 15:04:22,897 - app.client - DEBUG - Function "start()" return: None
+2021-06-26 15:04:22,898 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test1',), {} - from "read_from_server"
+2021-06-26 15:04:22,898 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 15:04:22', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}}
+2021-06-26 15:04:25,120 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', 'hello'), {} - from "write_to_server"
+2021-06-26 15:04:25,120 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 15:04:25', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': 'hello'}
+2021-06-26 15:06:53,383 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7790), {} - from "<module>"
+2021-06-26 15:06:55,627 - app.client - DEBUG - Function "start()" return: None
+2021-06-26 15:06:55,628 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test1',), {} - from "read_from_server"
+2021-06-26 15:06:55,628 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 15:06:55', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}}
+2021-06-26 15:06:57,391 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', 'he'), {} - from "write_to_server"
+2021-06-26 15:06:57,391 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 15:06:57', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': 'he'}
+2021-06-26 15:07:44,091 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7799), {} - from "<module>"
+2021-06-26 15:07:46,407 - app.client - DEBUG - Function "start()" return: None
+2021-06-26 15:07:46,408 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test1',), {} - from "read_from_server"
+2021-06-26 15:07:46,408 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 15:07:46', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}}
+2021-06-26 15:07:47,845 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', '1234'), {} - from "write_to_server"
+2021-06-26 15:07:47,845 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 15:07:47', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': '1234'}
+2021-06-26 15:07:51,047 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', '4567'), {} - from "write_to_server"
+2021-06-26 15:07:51,047 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 15:07:51', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': '4567'}
+2021-06-26 15:08:51,689 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7799), {} - from "<module>"
+2021-06-26 15:08:54,893 - app.client - DEBUG - Function "start()" return: None
+2021-06-26 15:08:54,893 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test12',), {} - from "read_from_server"
+2021-06-26 15:08:54,893 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 15:08:54', 'type': 'status', 'user': {'account_name': 'test12', 'status': 'on-line'}}
+2021-06-26 15:08:56,387 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test12', 'qwe'), {} - from "write_to_server"
+2021-06-26 15:08:56,388 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 15:08:56', 'type': 'status', 'user': {'account_name': 'test12', 'status': 'on-line'}, 'message': 'qwe'}
+2021-06-26 15:08:57,749 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test12', '\\'), {} - from "write_to_server"
+2021-06-26 15:08:57,749 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 15:08:57', 'type': 'status', 'user': {'account_name': 'test12', 'status': 'on-line'}, 'message': '\\'}
+2021-06-26 15:09:19,171 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7788), {} - from "<module>"
+2021-06-26 15:09:21,614 - app.client - DEBUG - Function "start()" return: None
+2021-06-26 15:09:21,614 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test1',), {} - from "read_from_server"
+2021-06-26 15:09:21,614 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 15:09:21', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}}
+2021-06-26 15:09:22,512 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', 'hi'), {} - from "write_to_server"
+2021-06-26 15:09:22,512 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 15:09:22', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': 'hi'}
+2021-06-26 15:09:35,733 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7788), {} - from "<module>"
+2021-06-26 15:09:38,060 - app.client - DEBUG - Function "start()" return: None
+2021-06-26 15:09:38,061 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test2',), {} - from "read_from_server"
+2021-06-26 15:09:38,061 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 15:09:38', 'type': 'status', 'user': {'account_name': 'test2', 'status': 'on-line'}}
+2021-06-26 15:09:40,270 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test2', 'we'), {} - from "write_to_server"
+2021-06-26 15:09:40,270 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 15:09:40', 'type': 'status', 'user': {'account_name': 'test2', 'status': 'on-line'}, 'message': 'we'}
+2021-06-26 15:11:07,212 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7777), {} - from "<module>"
+2021-06-26 15:11:08,810 - app.client - DEBUG - Function "start()" return: None
+2021-06-26 15:11:08,810 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test1',), {} - from "read_from_server"
+2021-06-26 15:11:08,810 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 15:11:08', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}}
+2021-06-26 15:11:10,939 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', 'test'), {} - from "write_to_server"
+2021-06-26 15:11:10,939 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 15:11:10', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': 'test'}
+2021-06-26 15:11:24,274 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7777), {} - from "<module>"
+2021-06-26 15:11:25,987 - app.client - DEBUG - Function "start()" return: None
+2021-06-26 15:11:25,988 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test2',), {} - from "read_from_server"
+2021-06-26 15:11:25,988 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 15:11:25', 'type': 'status', 'user': {'account_name': 'test2', 'status': 'on-line'}}
+2021-06-26 15:11:27,972 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test2', 'test2'), {} - from "write_to_server"
+2021-06-26 15:11:27,972 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 15:11:27', 'type': 'status', 'user': {'account_name': 'test2', 'status': 'on-line'}, 'message': 'test2'}
+2021-06-26 15:14:09,442 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7778), {} - from "<module>"
+2021-06-26 15:14:10,948 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test1',), {} - from "read_from_server"
+2021-06-26 15:14:10,948 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 15:14:10', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}}
+2021-06-26 15:14:13,420 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', 'hello'), {} - from "write_to_server"
+2021-06-26 15:14:13,420 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 15:14:13', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': 'hello'}
+2021-06-26 15:14:17,380 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', 'helli'), {} - from "write_to_server"
+2021-06-26 15:14:17,380 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 15:14:17', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': 'helli'}
+2021-06-26 15:16:10,043 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7778), {} - from "<module>"
+2021-06-26 15:16:12,904 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test1',), {} - from "read_from_server"
+2021-06-26 15:16:12,904 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 15:16:12', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}}
+2021-06-26 15:16:14,400 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', 'test'), {} - from "write_to_server"
+2021-06-26 15:16:14,400 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 15:16:14', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': 'test'}
+2021-06-26 15:18:05,798 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7777), {} - from "<module>"
+2021-06-26 15:18:08,049 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test1',), {} - from "read_from_server"
+2021-06-26 15:18:08,050 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 15:18:08', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}}
+2021-06-26 15:18:08,820 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', 'test'), {} - from "write_to_server"
+2021-06-26 15:18:08,820 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 15:18:08', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': 'test'}
+2021-06-26 15:20:21,010 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7778), {} - from "<module>"
+2021-06-26 15:20:24,239 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test1',), {} - from "read_from_server"
+2021-06-26 15:20:24,239 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 15:20:24', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}}
+2021-06-26 15:20:26,411 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', 'hello'), {} - from "write_to_server"
+2021-06-26 15:20:26,411 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 15:20:26', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': 'hello'}
+2021-06-26 15:21:25,236 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7777), {} - from "<module>"
+2021-06-26 15:21:26,501 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test1',), {} - from "read_from_server"
+2021-06-26 15:21:26,501 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 15:21:26', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}}
+2021-06-26 15:21:27,330 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', 'test'), {} - from "write_to_server"
+2021-06-26 15:21:27,330 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 15:21:27', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': 'test'}
+2021-06-26 15:25:23,152 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7777), {} - from "<module>"
+2021-06-26 15:25:27,645 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test1',), {} - from "read_from_server"
+2021-06-26 15:25:27,645 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 15:25:27', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}}
+2021-06-26 15:25:34,910 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7777), {} - from "<module>"
+2021-06-26 15:25:41,722 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test2', 'hi'), {} - from "write_to_server"
+2021-06-26 15:25:41,722 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 15:25:41', 'type': 'status', 'user': {'account_name': 'test2', 'status': 'on-line'}, 'message': 'hi'}
+2021-06-26 15:28:10,751 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7778), {} - from "<module>"
+2021-06-26 15:28:13,714 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test1',), {} - from "read_from_server"
+2021-06-26 15:28:13,714 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 15:28:13', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}}
+2021-06-26 15:31:33,675 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7777), {} - from "<module>"
+2021-06-26 15:31:38,348 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test1',), {} - from "read_from_server"
+2021-06-26 15:31:38,348 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 15:31:38', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}}
+2021-06-26 15:32:07,011 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7790), {} - from "<module>"
+2021-06-26 15:32:10,192 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test1',), {} - from "read_from_server"
+2021-06-26 15:32:10,192 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 15:32:10', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}}
+2021-06-26 15:32:45,849 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7780), {} - from "<module>"
+2021-06-26 15:32:51,053 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('еуtest1',), {} - from "read_from_server"
+2021-06-26 15:32:51,053 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 15:32:51', 'type': 'status', 'user': {'account_name': 'еуtest1', 'status': 'on-line'}}
+2021-06-26 15:36:15,718 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7790), {} - from "<module>"
+2021-06-26 15:36:18,680 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test1',), {} - from "read_from_server"
+2021-06-26 15:36:18,680 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 15:36:18', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}}
+2021-06-26 15:38:37,204 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7780), {} - from "<module>"
+2021-06-26 15:38:41,425 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test1',), {} - from "read_from_server"
+2021-06-26 15:38:41,425 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 15:38:41', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}}
+2021-06-26 15:45:27,439 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7770), {} - from "<module>"
+2021-06-26 15:45:30,877 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test1',), {} - from "read_from_server"
+2021-06-26 15:45:30,877 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 15:45:30', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}}
+2021-06-26 15:48:36,977 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7780), {} - from "<module>"
+2021-06-26 15:48:40,529 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test1',), {} - from "read_from_server"
+2021-06-26 15:48:40,529 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 15:48:40', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}}
+2021-06-26 15:51:33,553 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7790), {} - from "<module>"
+2021-06-26 15:51:40,185 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7790), {} - from "<module>"
+2021-06-26 15:52:20,078 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7770), {} - from "<module>"
+2021-06-26 15:52:21,900 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test1',), {} - from "read_from_server"
+2021-06-26 15:52:21,900 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 15:52:21', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}}
+2021-06-26 15:56:15,408 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7775), {} - from "<module>"
+2021-06-26 15:56:18,892 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', 're'), {} - from "write_to_server"
+2021-06-26 15:56:18,892 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 15:56:18', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': 're'}
+2021-06-26 15:56:23,125 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', 'we'), {} - from "write_to_server"
+2021-06-26 15:56:23,126 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 15:56:23', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': 'we'}
+2021-06-26 15:56:33,728 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', 'we'), {} - from "write_to_server"
+2021-06-26 15:56:33,728 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 15:56:33', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': 'we'}
+2021-06-26 16:01:26,664 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7775), {} - from "<module>"
+2021-06-26 16:01:32,169 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test1',), {} - from "read_from_server"
+2021-06-26 16:01:32,169 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 16:01:32', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}}
+2021-06-26 16:03:40,343 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7780), {} - from "<module>"
+2021-06-26 16:03:43,024 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test1',), {} - from "read_from_server"
+2021-06-26 16:03:43,024 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 16:03:43', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}}
+2021-06-26 16:04:05,027 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7777), {} - from "<module>"
+2021-06-26 16:04:07,819 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test1',), {} - from "read_from_server"
+2021-06-26 16:04:07,819 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 16:04:07', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}}
+2021-06-26 16:05:06,348 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7795), {} - from "<module>"
+2021-06-26 16:05:09,236 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test1',), {} - from "read_from_server"
+2021-06-26 16:05:09,236 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 16:05:09', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}}
+2021-06-26 16:05:59,837 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7788), {} - from "<module>"
+2021-06-26 16:06:02,689 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test1',), {} - from "read_from_server"
+2021-06-26 16:06:02,689 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 16:06:02', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}}
+2021-06-26 16:07:10,587 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7777), {} - from "<module>"
+2021-06-26 16:07:13,327 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test1',), {} - from "read_from_server"
+2021-06-26 16:07:13,327 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 16:07:13', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}}
+2021-06-26 16:08:59,198 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7788), {} - from "<module>"
+2021-06-26 16:09:01,833 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test1',), {} - from "read_from_server"
+2021-06-26 16:09:01,833 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 16:09:01', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}}
+2021-06-26 16:19:38,183 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7788), {} - from "<module>"
+2021-06-26 16:19:41,957 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test1',), {} - from "read_from_server"
+2021-06-26 16:19:41,957 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 16:19:41', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}}
+2021-06-26 16:20:17,503 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7777), {} - from "<module>"
+2021-06-26 16:20:21,007 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test1',), {} - from "read_from_server"
+2021-06-26 16:20:21,007 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 16:20:21', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}}
+2021-06-26 16:20:42,764 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7766), {} - from "<module>"
+2021-06-26 16:20:45,176 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test1',), {} - from "read_from_server"
+2021-06-26 16:20:45,176 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 16:20:45', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}}
+2021-06-26 16:21:24,370 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7778), {} - from "<module>"
+2021-06-26 16:21:27,590 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test1\x1b[3~',), {} - from "read_from_server"
+2021-06-26 16:21:27,591 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 16:21:27', 'type': 'status', 'user': {'account_name': 'test1\x1b[3~', 'status': 'on-line'}}
+2021-06-26 16:22:05,603 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7779), {} - from "<module>"
+2021-06-26 16:22:08,040 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test1',), {} - from "read_from_server"
+2021-06-26 16:22:08,040 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 16:22:08', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}}
+2021-06-26 16:23:28,621 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7779), {} - from "<module>"
+2021-06-26 16:24:31,362 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7779), {} - from "<module>"
+2021-06-26 16:25:05,358 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7779), {} - from "<module>"
+2021-06-26 16:25:07,763 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test1',), {} - from "read_from_server"
+2021-06-26 16:25:07,763 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 16:25:07', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}}
+2021-06-26 16:26:09,381 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7777), {} - from "<module>"
+2021-06-26 16:26:11,977 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test1',), {} - from "read_from_server"
+2021-06-26 16:26:11,977 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 16:26:11', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}}
+2021-06-26 16:27:04,622 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7776), {} - from "<module>"
+2021-06-26 16:27:07,207 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test1',), {} - from "read_from_server"
+2021-06-26 16:27:07,207 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 16:27:07', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}}
+2021-06-26 16:27:27,788 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7776), {} - from "<module>"
+2021-06-26 16:27:32,266 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test2', 'hi'), {} - from "write_to_server"
+2021-06-26 16:27:32,266 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 16:27:32', 'type': 'status', 'user': {'account_name': 'test2', 'status': 'on-line'}, 'message': 'hi'}
+2021-06-26 16:32:59,340 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7778), {} - from "<module>"
+2021-06-26 16:35:35,460 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7778), {} - from "<module>"
+2021-06-26 16:35:37,079 - app.client - DEBUG - Function "start()" return: None
+2021-06-26 16:35:37,080 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test1',), {} - from "read_from_server"
+2021-06-26 16:35:37,080 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 16:35:37', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}}
+2021-06-26 16:37:17,642 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7778), {} - from "<module>"
+2021-06-26 16:37:19,103 - app.client - DEBUG - Function "start()" return: None
+2021-06-26 16:37:19,104 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test1',), {} - from "read_from_server"
+2021-06-26 16:37:19,104 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 16:37:19', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}}
+2021-06-26 16:37:20,884 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', 'he'), {} - from "write_to_server"
+2021-06-26 16:37:20,884 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 16:37:20', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': 'he'}
+2021-06-26 16:37:27,064 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', 'ku'), {} - from "write_to_server"
+2021-06-26 16:37:27,064 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 16:37:27', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': 'ku'}
+2021-06-26 16:37:59,078 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', 'hello'), {} - from "write_to_server"
+2021-06-26 16:37:59,078 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 16:37:59', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': 'hello'}
+2021-06-26 16:39:03,300 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7778), {} - from "<module>"
+2021-06-26 16:39:05,286 - app.client - DEBUG - Function "start()" return: None
+2021-06-26 16:39:05,287 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test2',), {} - from "read_from_server"
+2021-06-26 16:39:05,287 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 16:39:05', 'type': 'status', 'user': {'account_name': 'test2', 'status': 'on-line'}}
+2021-06-26 16:39:08,001 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test2', 'look'), {} - from "write_to_server"
+2021-06-26 16:39:08,001 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 16:39:08', 'type': 'status', 'user': {'account_name': 'test2', 'status': 'on-line'}, 'message': 'look'}
+2021-06-26 16:44:17,155 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7750), {} - from "<module>"
+2021-06-26 16:44:19,092 - app.client - DEBUG - Function "start()" return: None
+2021-06-26 16:44:19,093 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test1',), {} - from "read_from_server"
+2021-06-26 16:44:19,093 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 16:44:19', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}}
+2021-06-26 16:44:24,697 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7750), {} - from "<module>"
+2021-06-26 16:44:26,606 - app.client - DEBUG - Function "start()" return: None
+2021-06-26 16:44:26,607 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test2',), {} - from "read_from_server"
+2021-06-26 16:44:26,607 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 16:44:26', 'type': 'status', 'user': {'account_name': 'test2', 'status': 'on-line'}}
+2021-06-26 16:44:56,547 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', 'hello'), {} - from "write_to_server"
+2021-06-26 16:44:56,547 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 16:44:56', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': 'hello'}
+2021-06-26 16:45:14,434 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test2', 'hi'), {} - from "write_to_server"
+2021-06-26 16:45:14,434 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 16:45:14', 'type': 'status', 'user': {'account_name': 'test2', 'status': 'on-line'}, 'message': 'hi'}
+2021-06-26 16:45:24,803 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', 'hi'), {} - from "write_to_server"
+2021-06-26 16:45:24,803 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 16:45:24', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': 'hi'}
+2021-06-26 16:45:31,209 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test2', 'he'), {} - from "write_to_server"
+2021-06-26 16:45:31,209 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 16:45:31', 'type': 'status', 'user': {'account_name': 'test2', 'status': 'on-line'}, 'message': 'he'}
+2021-06-26 16:45:46,571 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test2', '123'), {} - from "write_to_server"
+2021-06-26 16:45:46,571 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 16:45:46', 'type': 'status', 'user': {'account_name': 'test2', 'status': 'on-line'}, 'message': '123'}
+2021-06-26 16:45:50,883 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', 'asd'), {} - from "write_to_server"
+2021-06-26 16:45:50,883 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 16:45:50', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': 'asd'}
+2021-06-26 16:46:40,029 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7750), {} - from "<module>"
+2021-06-26 16:46:41,380 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test1',), {} - from "read_from_server"
+2021-06-26 16:46:41,380 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 16:46:41', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}}
+2021-06-26 16:46:48,226 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7750), {} - from "<module>"
+2021-06-26 16:46:49,415 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test2',), {} - from "read_from_server"
+2021-06-26 16:46:49,415 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 16:46:49', 'type': 'status', 'user': {'account_name': 'test2', 'status': 'on-line'}}
+2021-06-26 16:47:00,768 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', 'hi'), {} - from "write_to_server"
+2021-06-26 16:47:00,768 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 16:47:00', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': 'hi'}
+2021-06-26 16:47:05,529 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test2', 'hello'), {} - from "write_to_server"
+2021-06-26 16:47:05,529 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 16:47:05', 'type': 'status', 'user': {'account_name': 'test2', 'status': 'on-line'}, 'message': 'hello'}
+2021-06-26 16:48:36,805 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7760), {} - from "<module>"
+2021-06-26 16:48:40,493 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7760), {} - from "<module>"
+2021-06-26 16:48:43,269 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test1',), {} - from "read_from_server"
+2021-06-26 16:48:43,269 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 16:48:43', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}}
+2021-06-26 16:48:46,341 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test2',), {} - from "read_from_server"
+2021-06-26 16:48:46,341 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 16:48:46', 'type': 'status', 'user': {'account_name': 'test2', 'status': 'on-line'}}
+2021-06-26 16:49:14,044 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', 'hello'), {} - from "write_to_server"
+2021-06-26 16:49:14,044 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 16:49:14', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': 'hello'}
+2021-06-26 16:52:37,364 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7765), {} - from "<module>"
+2021-06-26 16:52:40,892 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7765), {} - from "<module>"
+2021-06-26 16:52:49,646 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test1',), {} - from "read_from_server"
+2021-06-26 16:52:49,646 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 16:52:49', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}}
+2021-06-26 16:52:52,987 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test2',), {} - from "read_from_server"
+2021-06-26 16:52:52,987 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 16:52:52', 'type': 'status', 'user': {'account_name': 'test2', 'status': 'on-line'}}
+2021-06-26 16:53:12,928 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', 'hello'), {} - from "write_to_server"
+2021-06-26 16:53:12,928 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 16:53:12', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': 'hello'}
+2021-06-26 16:53:19,720 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test2', 'hi'), {} - from "write_to_server"
+2021-06-26 16:53:19,720 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 16:53:19', 'type': 'status', 'user': {'account_name': 'test2', 'status': 'on-line'}, 'message': 'hi'}
+2021-06-26 16:54:33,549 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 8000), {} - from "<module>"
+2021-06-26 16:54:37,584 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 8000), {} - from "<module>"
+2021-06-26 16:54:40,085 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test1',), {} - from "read_from_server"
+2021-06-26 16:54:40,085 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 16:54:40', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}}
+2021-06-26 16:54:43,341 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test2',), {} - from "read_from_server"
+2021-06-26 16:54:43,341 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 16:54:43', 'type': 'status', 'user': {'account_name': 'test2', 'status': 'on-line'}}
+2021-06-26 16:54:49,420 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', 'hello'), {} - from "write_to_server"
+2021-06-26 16:54:49,421 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 16:54:49', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': 'hello'}
+2021-06-26 16:54:53,306 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test2', 'hi'), {} - from "write_to_server"
+2021-06-26 16:54:53,306 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 16:54:53', 'type': 'status', 'user': {'account_name': 'test2', 'status': 'on-line'}, 'message': 'hi'}
+2021-06-26 16:55:22,363 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', 'test'), {} - from "write_to_server"
+2021-06-26 16:55:22,363 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 16:55:22', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': 'test'}
+2021-06-26 16:56:19,659 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 8000), {} - from "<module>"
+2021-06-26 16:56:21,624 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 8000), {} - from "<module>"
+2021-06-26 16:56:25,244 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test2',), {} - from "read_from_server"
+2021-06-26 16:56:25,244 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 16:56:25', 'type': 'status', 'user': {'account_name': 'test2', 'status': 'on-line'}}
+2021-06-26 16:56:27,056 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test1',), {} - from "read_from_server"
+2021-06-26 16:56:27,056 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 16:56:27', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}}
+2021-06-26 16:56:29,355 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', 'hello'), {} - from "write_to_server"
+2021-06-26 16:56:29,355 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 16:56:29', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': 'hello'}
+2021-06-26 16:56:32,036 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test2', 'hi'), {} - from "write_to_server"
+2021-06-26 16:56:32,036 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 16:56:32', 'type': 'status', 'user': {'account_name': 'test2', 'status': 'on-line'}, 'message': 'hi'}
+2021-06-26 16:57:22,303 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 8000), {} - from "<module>"
+2021-06-26 16:57:23,547 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test1',), {} - from "read_from_server"
+2021-06-26 16:57:23,547 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 16:57:23', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}}
+2021-06-26 16:57:28,271 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 8000), {} - from "<module>"
+2021-06-26 16:57:29,623 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test2',), {} - from "read_from_server"
+2021-06-26 16:57:29,623 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 16:57:29', 'type': 'status', 'user': {'account_name': 'test2', 'status': 'on-line'}}
+2021-06-26 16:57:33,144 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', 'hi'), {} - from "write_to_server"
+2021-06-26 16:57:33,144 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 16:57:33', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': 'hi'}
+2021-06-26 16:57:35,832 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test2', 'hello'), {} - from "write_to_server"
+2021-06-26 16:57:35,832 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 16:57:35', 'type': 'status', 'user': {'account_name': 'test2', 'status': 'on-line'}, 'message': 'hello'}
+2021-06-26 16:59:27,120 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7878), {} - from "<module>"
+2021-06-26 16:59:28,539 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test1',), {} - from "read_from_server"
+2021-06-26 16:59:28,539 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 16:59:28', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}}
+2021-06-26 16:59:32,579 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', 'hi'), {} - from "write_to_server"
+2021-06-26 16:59:32,579 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 16:59:32', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': 'hi'}
+2021-06-26 17:00:47,043 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7878), {} - from "<module>"
+2021-06-26 17:00:48,555 - app.client - DEBUG - Function "start()" return: None
+2021-06-26 17:00:48,555 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test1',), {} - from "read_from_server"
+2021-06-26 17:00:48,555 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 17:00:48', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}}
+2021-06-26 17:00:50,798 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', 'hello'), {} - from "write_to_server"
+2021-06-26 17:00:50,798 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 17:00:50', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': 'hello'}
+2021-06-26 17:00:55,794 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7878), {} - from "<module>"
+2021-06-26 17:00:58,603 - app.client - DEBUG - Function "start()" return: None
+2021-06-26 17:00:58,604 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test2',), {} - from "read_from_server"
+2021-06-26 17:00:58,604 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 17:00:58', 'type': 'status', 'user': {'account_name': 'test2', 'status': 'on-line'}}
+2021-06-26 17:01:01,434 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test2', 'hello_2'), {} - from "write_to_server"
+2021-06-26 17:01:01,434 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 17:01:01', 'type': 'status', 'user': {'account_name': 'test2', 'status': 'on-line'}, 'message': 'hello_2'}
+2021-06-26 17:07:36,043 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7879), {} - from "<module>"
+2021-06-26 17:07:39,125 - app.client - DEBUG - Function "start()" return: None
+2021-06-26 17:07:39,126 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test1',), {} - from "read_from_server"
+2021-06-26 17:07:39,126 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 17:07:39', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}}
+2021-06-26 17:07:41,225 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', 'hello'), {} - from "write_to_server"
+2021-06-26 17:07:41,225 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 17:07:41', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': 'hello'}
+2021-06-26 17:11:56,039 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7879), {} - from "<module>"
+2021-06-26 17:11:57,709 - app.client - DEBUG - Function "start()" return: None
+2021-06-26 17:11:57,710 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test1',), {} - from "read_from_server"
+2021-06-26 17:11:57,710 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 17:11:57', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}}
+2021-06-26 17:11:59,948 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', 'hello'), {} - from "write_to_server"
+2021-06-26 17:11:59,948 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 17:11:59', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': 'hello'}
+2021-06-26 17:13:08,782 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7877), {} - from "<module>"
+2021-06-26 17:13:10,280 - app.client - DEBUG - Function "start()" return: None
+2021-06-26 17:13:10,281 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test1',), {} - from "read_from_server"
+2021-06-26 17:13:10,281 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 17:13:10', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}}
+2021-06-26 17:13:12,208 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', 'hello'), {} - from "write_to_server"
+2021-06-26 17:13:12,208 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 17:13:12', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': 'hello'}
+2021-06-26 17:13:49,053 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7780), {} - from "<module>"
+2021-06-26 17:13:50,718 - app.client - DEBUG - Function "start()" return: None
+2021-06-26 17:13:50,719 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test1',), {} - from "read_from_server"
+2021-06-26 17:13:50,719 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 17:13:50', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}}
+2021-06-26 17:13:52,845 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', 'helol'), {} - from "write_to_server"
+2021-06-26 17:13:52,845 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 17:13:52', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': 'helol'}
+2021-06-26 17:13:59,169 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', 'hi'), {} - from "write_to_server"
+2021-06-26 17:13:59,169 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 17:13:59', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': 'hi'}
+2021-06-26 17:14:07,147 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', 'hello'), {} - from "write_to_server"
+2021-06-26 17:14:07,147 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 17:14:07', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': 'hello'}
+2021-06-26 17:14:18,702 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', 'check'), {} - from "write_to_server"
+2021-06-26 17:14:18,702 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 17:14:18', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': 'check'}
+2021-06-26 17:14:43,027 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7780), {} - from "<module>"
+2021-06-26 17:14:44,990 - app.client - DEBUG - Function "start()" return: None
+2021-06-26 17:14:44,991 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test2',), {} - from "read_from_server"
+2021-06-26 17:14:44,991 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 17:14:44', 'type': 'status', 'user': {'account_name': 'test2', 'status': 'on-line'}}
+2021-06-26 17:14:47,284 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test2', 'hello'), {} - from "write_to_server"
+2021-06-26 17:14:47,285 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 17:14:47', 'type': 'status', 'user': {'account_name': 'test2', 'status': 'on-line'}, 'message': 'hello'}
+2021-06-26 17:15:03,721 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', 'hellohelp'), {} - from "write_to_server"
+2021-06-26 17:15:03,721 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 17:15:03', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': 'hellohelp'}
+2021-06-26 17:15:12,666 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7780), {} - from "<module>"
+2021-06-26 17:15:14,905 - app.client - DEBUG - Function "start()" return: None
+2021-06-26 17:15:14,906 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test3',), {} - from "read_from_server"
+2021-06-26 17:15:14,906 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 17:15:14', 'type': 'status', 'user': {'account_name': 'test3', 'status': 'on-line'}}
+2021-06-26 17:15:16,380 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test3', 'he'), {} - from "write_to_server"
+2021-06-26 17:15:16,381 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 17:15:16', 'type': 'status', 'user': {'account_name': 'test3', 'status': 'on-line'}, 'message': 'he'}
+2021-06-26 17:16:02,995 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test3', 'se'), {} - from "write_to_server"
+2021-06-26 17:16:02,995 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 17:16:02', 'type': 'status', 'user': {'account_name': 'test3', 'status': 'on-line'}, 'message': 'se'}
+2021-06-26 17:16:05,424 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test3', 'qwe'), {} - from "write_to_server"
+2021-06-26 17:16:05,424 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 17:16:05', 'type': 'status', 'user': {'account_name': 'test3', 'status': 'on-line'}, 'message': 'qwe'}
+2021-06-26 17:16:06,912 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test2', 'qwe'), {} - from "write_to_server"
+2021-06-26 17:16:06,912 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 17:16:06', 'type': 'status', 'user': {'account_name': 'test2', 'status': 'on-line'}, 'message': 'qwe'}
+2021-06-26 17:20:54,490 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7676), {} - from "<module>"
+2021-06-26 17:20:56,135 - app.client - DEBUG - Function "start()" return: None
+2021-06-26 17:20:56,136 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test1',), {} - from "read_from_server"
+2021-06-26 17:20:56,136 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 17:20:56', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}}
+2021-06-26 17:20:58,750 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', 'hello'), {} - from "write_to_server"
+2021-06-26 17:20:58,751 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 17:20:58', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': 'hello'}
+2021-06-26 17:21:25,047 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', 'hi'), {} - from "write_to_server"
+2021-06-26 17:21:25,047 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 17:21:25', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': 'hi'}
+2021-06-26 17:22:05,296 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7676), {} - from "<module>"
+2021-06-26 17:22:07,579 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test10',), {} - from "read_from_server"
+2021-06-26 17:22:07,579 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 17:22:07', 'type': 'status', 'user': {'account_name': 'test10', 'status': 'on-line'}}
+2021-06-26 17:22:10,087 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test10', 'hello'), {} - from "write_to_server"
+2021-06-26 17:22:10,087 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 17:22:10', 'type': 'status', 'user': {'account_name': 'test10', 'status': 'on-line'}, 'message': 'hello'}
+2021-06-26 17:23:21,275 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 8787), {} - from "<module>"
+2021-06-26 17:23:22,830 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test1',), {} - from "read_from_server"
+2021-06-26 17:23:22,830 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 17:23:22', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}}
+2021-06-26 17:23:24,630 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', 'hi'), {} - from "write_to_server"
+2021-06-26 17:23:24,630 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 17:23:24', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': 'hi'}
+2021-06-26 17:23:36,683 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', 'check'), {} - from "write_to_server"
+2021-06-26 17:23:36,683 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 17:23:36', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': 'check'}
+2021-06-26 17:24:55,609 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 8888), {} - from "<module>"
+2021-06-26 17:24:56,953 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test1',), {} - from "read_from_server"
+2021-06-26 17:24:56,953 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 17:24:56', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}}
+2021-06-26 17:24:58,480 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', 'hi'), {} - from "write_to_server"
+2021-06-26 17:24:58,480 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 17:24:58', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': 'hi'}
+2021-06-26 17:25:20,100 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', 'check'), {} - from "write_to_server"
+2021-06-26 17:25:20,100 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 17:25:20', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': 'check'}
+2021-06-26 17:26:20,569 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 8888), {} - from "<module>"
+2021-06-26 17:26:22,739 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('еуые10',), {} - from "read_from_server"
+2021-06-26 17:26:22,739 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 17:26:22', 'type': 'status', 'user': {'account_name': 'еуые10', 'status': 'on-line'}}
+2021-06-26 17:26:25,042 - app.client - DEBUG - Function "gen_text_msg()" called with: ('еуые10', 'hello'), {} - from "write_to_server"
+2021-06-26 17:26:25,042 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 17:26:25', 'type': 'status', 'user': {'account_name': 'еуые10', 'status': 'on-line'}, 'message': 'hello'}
+2021-06-26 17:26:41,104 - app.client - DEBUG - Function "gen_text_msg()" called with: ('еуые10', 'check'), {} - from "write_to_server"
+2021-06-26 17:26:41,104 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 17:26:41', 'type': 'status', 'user': {'account_name': 'еуые10', 'status': 'on-line'}, 'message': 'check'}
+2021-06-26 17:27:01,806 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 8888), {} - from "<module>"
+2021-06-26 17:27:05,086 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('check1',), {} - from "read_from_server"
+2021-06-26 17:27:05,086 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 17:27:05', 'type': 'status', 'user': {'account_name': 'check1', 'status': 'on-line'}}
+2021-06-26 17:27:06,330 - app.client - DEBUG - Function "gen_text_msg()" called with: ('check1', 'test'), {} - from "write_to_server"
+2021-06-26 17:27:06,330 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 17:27:06', 'type': 'status', 'user': {'account_name': 'check1', 'status': 'on-line'}, 'message': 'test'}
+2021-06-26 17:28:42,248 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 9000), {} - from "<module>"
+2021-06-26 17:28:44,396 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test1',), {} - from "read_from_server"
+2021-06-26 17:28:44,396 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 17:28:44', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}}
+2021-06-26 17:28:45,429 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', 'hi'), {} - from "write_to_server"
+2021-06-26 17:28:45,429 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 17:28:45', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': 'hi'}
+2021-06-26 17:30:12,450 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', 'where?'), {} - from "write_to_server"
+2021-06-26 17:30:12,450 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 17:30:12', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': 'where?'}
+2021-06-26 17:30:20,265 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', 'have'), {} - from "write_to_server"
+2021-06-26 17:30:20,265 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 17:30:20', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': 'have'}
+2021-06-26 17:30:38,475 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 9000), {} - from "<module>"
+2021-06-26 17:30:42,671 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test777', 'hi'), {} - from "write_to_server"
+2021-06-26 17:30:42,671 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 17:30:42', 'type': 'status', 'user': {'account_name': 'test777', 'status': 'on-line'}, 'message': 'hi'}
+2021-06-26 17:30:44,319 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test777',), {} - from "read_from_server"
+2021-06-26 17:30:44,319 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 17:30:44', 'type': 'status', 'user': {'account_name': 'test777', 'status': 'on-line'}}
+2021-06-26 17:31:13,066 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test777', 'nice to see you'), {} - from "write_to_server"
+2021-06-26 17:31:13,066 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 17:31:13', 'type': 'status', 'user': {'account_name': 'test777', 'status': 'on-line'}, 'message': 'nice to see you'}
+2021-06-26 17:36:22,494 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7777), {} - from "<module>"
+2021-06-26 17:36:24,702 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test1',), {} - from "read_from_server"
+2021-06-26 17:36:24,702 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 17:36:24', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}}
+2021-06-26 17:36:26,135 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', 'hi'), {} - from "write_to_server"
+2021-06-26 17:36:26,135 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 17:36:26', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': 'hi'}
+2021-06-26 17:36:53,112 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7777), {} - from "<module>"
+2021-06-26 17:36:58,227 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test2', 'look'), {} - from "write_to_server"
+2021-06-26 17:36:58,227 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 17:36:58', 'type': 'status', 'user': {'account_name': 'test2', 'status': 'on-line'}, 'message': 'look'}
+2021-06-26 17:36:58,527 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test2',), {} - from "read_from_server"
+2021-06-26 17:36:58,527 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 17:36:58', 'type': 'status', 'user': {'account_name': 'test2', 'status': 'on-line'}}
+2021-06-26 17:37:21,785 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', 'check'), {} - from "write_to_server"
+2021-06-26 17:37:21,785 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 17:37:21', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': 'check'}
+2021-06-26 17:37:52,435 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test2', 'check2'), {} - from "write_to_server"
+2021-06-26 17:37:52,435 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 17:37:52', 'type': 'status', 'user': {'account_name': 'test2', 'status': 'on-line'}, 'message': 'check2'}
+2021-06-26 17:41:00,137 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7777), {} - from "<module>"
+2021-06-26 17:41:01,516 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test1',), {} - from "read_from_server"
+2021-06-26 17:41:01,517 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 17:41:01', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}}
+2021-06-26 17:41:14,709 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', 'hi'), {} - from "write_to_server"
+2021-06-26 17:41:14,709 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 17:41:14', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': 'hi'}
+2021-06-26 17:41:31,016 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', 'where&'), {} - from "write_to_server"
+2021-06-26 17:41:31,017 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 17:41:31', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': 'where&'}
+2021-06-26 17:42:36,538 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7777), {} - from "<module>"
+2021-06-26 17:42:50,758 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7778), {} - from "<module>"
+2021-06-26 17:42:52,079 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test1',), {} - from "read_from_server"
+2021-06-26 17:42:52,080 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 17:42:52', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}}
+2021-06-26 17:43:39,016 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', 'hi'), {} - from "write_to_server"
+2021-06-26 17:43:39,016 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 17:43:39', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': 'hi'}
+2021-06-26 17:44:46,320 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 6666), {} - from "<module>"
+2021-06-26 17:44:49,899 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test100500',), {} - from "read_from_server"
+2021-06-26 17:44:49,899 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 17:44:49', 'type': 'status', 'user': {'account_name': 'test100500', 'status': 'on-line'}}
+2021-06-26 17:44:51,573 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test100500', 'hi'), {} - from "write_to_server"
+2021-06-26 17:44:51,574 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 17:44:51', 'type': 'status', 'user': {'account_name': 'test100500', 'status': 'on-line'}, 'message': 'hi'}
+2021-06-26 17:44:59,245 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 6666), {} - from "<module>"
+2021-06-26 17:45:03,598 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test500',), {} - from "read_from_server"
+2021-06-26 17:45:03,598 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 17:45:03', 'type': 'status', 'user': {'account_name': 'test500', 'status': 'on-line'}}
+2021-06-26 17:45:07,974 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test500', "I'm here"), {} - from "write_to_server"
+2021-06-26 17:45:07,974 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 17:45:07', 'type': 'status', 'user': {'account_name': 'test500', 'status': 'on-line'}, 'message': "I'm here"}
+2021-06-26 17:47:47,976 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test100500', 'hi'), {} - from "write_to_server"
+2021-06-26 17:47:47,976 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 17:47:47', 'type': 'status', 'user': {'account_name': 'test100500', 'status': 'on-line'}, 'message': 'hi'}
+2021-06-26 17:47:54,116 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test500', 'hello'), {} - from "write_to_server"
+2021-06-26 17:47:54,116 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 17:47:54', 'type': 'status', 'user': {'account_name': 'test500', 'status': 'on-line'}, 'message': 'hello'}
+2021-06-26 17:53:10,153 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7788), {} - from "<module>"
+2021-06-26 17:53:13,127 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test1',), {} - from "read_from_server"
+2021-06-26 17:53:13,127 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 17:53:13', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}}
+2021-06-26 17:53:14,826 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', 'hi'), {} - from "write_to_server"
+2021-06-26 17:53:14,827 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 17:53:14', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': 'hi'}
+2021-06-26 17:53:38,439 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7788), {} - from "<module>"
+2021-06-26 17:53:40,531 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test1',), {} - from "read_from_server"
+2021-06-26 17:53:40,531 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 17:53:40', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}}
+2021-06-26 17:53:41,581 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', 'hi'), {} - from "write_to_server"
+2021-06-26 17:53:41,581 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 17:53:41', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': 'hi'}
+2021-06-26 17:54:15,394 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7799), {} - from "<module>"
+2021-06-26 17:54:17,054 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test1',), {} - from "read_from_server"
+2021-06-26 17:54:17,054 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 17:54:17', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}}
+2021-06-26 17:54:20,615 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', 'hello'), {} - from "write_to_server"
+2021-06-26 17:54:20,615 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 17:54:20', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': 'hello'}
+2021-06-26 17:54:50,965 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7799), {} - from "<module>"
+2021-06-26 17:54:52,602 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test1',), {} - from "read_from_server"
+2021-06-26 17:54:52,603 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 17:54:52', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}}
+2021-06-26 17:54:53,943 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', 'hi'), {} - from "write_to_server"
+2021-06-26 17:54:53,943 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 17:54:53', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': 'hi'}
+2021-06-26 17:55:15,666 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7799), {} - from "<module>"
+2021-06-26 17:55:17,584 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test1',), {} - from "read_from_server"
+2021-06-26 17:55:17,585 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 17:55:17', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}}
+2021-06-26 17:55:19,721 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', 'test'), {} - from "write_to_server"
+2021-06-26 17:55:19,722 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 17:55:19', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': 'test'}
+2021-06-26 17:56:20,529 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7799), {} - from "<module>"
+2021-06-26 17:56:21,878 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test1',), {} - from "read_from_server"
+2021-06-26 17:56:21,878 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 17:56:21', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}}
+2021-06-26 17:56:23,599 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', 'hi'), {} - from "write_to_server"
+2021-06-26 17:56:23,599 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 17:56:23', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': 'hi'}
+2021-06-26 17:56:44,549 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7799), {} - from "<module>"
+2021-06-26 17:56:46,467 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test2',), {} - from "read_from_server"
+2021-06-26 17:56:46,467 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 17:56:46', 'type': 'status', 'user': {'account_name': 'test2', 'status': 'on-line'}}
+2021-06-26 17:56:48,649 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test2', 'hello'), {} - from "write_to_server"
+2021-06-26 17:56:48,649 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 17:56:48', 'type': 'status', 'user': {'account_name': 'test2', 'status': 'on-line'}, 'message': 'hello'}
+2021-06-26 17:57:08,164 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', 'how are you?'), {} - from "write_to_server"
+2021-06-26 17:57:08,164 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 17:57:08', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': 'how are you?'}
+2021-06-26 17:57:37,812 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test2', 'good. but i need to go'), {} - from "write_to_server"
+2021-06-26 17:57:37,812 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 17:57:37', 'type': 'status', 'user': {'account_name': 'test2', 'status': 'on-line'}, 'message': 'good. but i need to go'}
+2021-06-26 17:57:40,851 - app.client - DEBUG - Function "start()" return: None
+2021-06-26 17:57:47,614 - app.client - DEBUG - Function "start()" return: None
+2021-06-26 17:59:17,644 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7789), {} - from "<module>"
+2021-06-26 17:59:19,687 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test1',), {} - from "read_from_server"
+2021-06-26 17:59:19,687 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 17:59:19', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}}
+2021-06-26 17:59:38,919 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7789), {} - from "<module>"
+2021-06-26 17:59:41,038 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test2',), {} - from "read_from_server"
+2021-06-26 17:59:41,038 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 17:59:41', 'type': 'status', 'user': {'account_name': 'test2', 'status': 'on-line'}}
+2021-06-26 18:00:04,993 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', 'how are you?'), {} - from "write_to_server"
+2021-06-26 18:00:04,993 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 18:00:04', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': 'how are you?'}
+2021-06-26 18:00:11,808 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test2', 'nice'), {} - from "write_to_server"
+2021-06-26 18:00:11,808 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 18:00:11', 'type': 'status', 'user': {'account_name': 'test2', 'status': 'on-line'}, 'message': 'nice'}
+2021-06-26 18:01:06,788 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7789), {} - from "<module>"
+2021-06-26 18:01:09,043 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test3',), {} - from "read_from_server"
+2021-06-26 18:01:09,043 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 18:01:09', 'type': 'status', 'user': {'account_name': 'test3', 'status': 'on-line'}}
+2021-06-26 18:01:31,819 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test3', 'hi'), {} - from "write_to_server"
+2021-06-26 18:01:31,819 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 18:01:31', 'type': 'status', 'user': {'account_name': 'test3', 'status': 'on-line'}, 'message': 'hi'}
+2021-06-26 18:01:45,285 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test3', 'how are you?'), {} - from "write_to_server"
+2021-06-26 18:01:45,285 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 18:01:45', 'type': 'status', 'user': {'account_name': 'test3', 'status': 'on-line'}, 'message': 'how are you?'}
+2021-06-26 18:04:08,953 - app.client - DEBUG - Function "start()" called with: ('127.0.0.1', 7789), {} - from "<module>"
+2021-06-26 18:04:10,748 - app.client - DEBUG - Function "write_to_server()" called with: ('test1', '127.0.0.1', 7789), {} - from "start"
+2021-06-26 18:04:10,749 - app.client - DEBUG - Function "read_from_server()" called with: ('test1', '127.0.0.1', 7789), {} - from "run"
+2021-06-26 18:04:10,749 - app.client - DEBUG - Function "gen_presence_msg()" called with: ('test1',), {} - from "read_from_server"
+2021-06-26 18:04:10,749 - app.client - DEBUG - Function "gen_presence_msg()" return: {'action': 'presence', 'time': '06/26/21 18:04:10', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}}
+2021-06-26 18:04:12,390 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', 'hi'), {} - from "write_to_server"
+2021-06-26 18:04:12,390 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 18:04:12', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': 'hi'}
+2021-06-26 18:04:19,417 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', 'hello'), {} - from "write_to_server"
+2021-06-26 18:04:19,417 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 18:04:19', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': 'hello'}
+2021-06-26 18:05:01,850 - app.client - DEBUG - Function "gen_text_msg()" called with: ('test1', 'how are you?'), {} - from "write_to_server"
+2021-06-26 18:05:01,850 - app.client - DEBUG - Function "gen_text_msg()" return: {'action': 'message', 'time': '06/26/21 18:05:01', 'type': 'status', 'user': {'account_name': 'test1', 'status': 'on-line'}, 'message': 'how are you?'}

@@ -80,37 +80,62 @@ def connection_check(_ip_address: str, _port: int):
 @log
 def start(_ip_address: str, _port: int):
     username = input('Enter your username: ')
+    # client_type = input('Enter "r" if you are reader or "w" if you are writer: ')
+
+    sock = socket(AF_INET, SOCK_STREAM)  # Создать сокет TCP
+    sock.connect((_ip_address, _port))  # Соединиться с сервером
+    sock.settimeout(1)
+
     r_thread = Thread(target=read_from_server, args=(username, _ip_address, _port))
-    w_thread = Thread(target=write_to_server, args=(username, _ip_address, _port))
     r_thread.start()
-    w_thread.start()
+    # w_thread = Thread(target=write_to_server, args=(username, _ip_address, _port))
+    # w_thread.start()
+    write_to_server(username, _ip_address, _port)
+    #
+    # if client_type == 'r' or client_type == 'R':
+    #     read_from_server(username, sock)
+    # else:
+    #     write_to_server(username, sock)
 
 
+@log
 def read_from_server(username: str, server_ip: str, port: int):
-    s = socket(AF_INET, SOCK_STREAM)  # Создать сокет TCP
-    s.connect((server_ip, port))  # Соединиться с сервером
+    sock = socket(AF_INET, SOCK_STREAM)  # Создать сокет TCP
+    sock.connect((server_ip, port))  # Соединиться с сервером
+
     msg = gen_presence_msg(username)
-    tmp = json.dumps(msg, indent=4, sort_keys=True, default=str)
-    s.send(tmp.encode('UTF-8'))
     while True:
+        sleep(1)
+        stat_info = json.dumps(msg, indent=4, sort_keys=True, default=str)
         try:
-            print('In work')
-            sleep(2)
-            tm = s.recv(1000000)
-            print("Получено: %s" % tm.decode('utf-8'))
+            sock.send(stat_info.encode('UTF-8'))
+        except Exception as e:
+            pass
+        finally:
+            try:
+                server_resp = sock.recv(1024)
+            except Exception as e:
+                my_log.error(e)
+        try:
+            tm = sock.recv(1024)
+            data = json.loads(tm.decode('utf-8'))
+            if data["action"] == 'message':
+                # print("\nПолучено: %s" % tm.decode('utf-8'))
+                print(f'\n{data["time"]}\n{data["user"]["account_name"]}: {data["message"]}')
         except Exception as e:
             pass
 
 
+@log
 def write_to_server(username: str, server_ip: str, port: int):
-    s = socket(AF_INET, SOCK_STREAM)  # Создать сокет TCP
-    s.connect((server_ip, port))  # Соединиться с сервером
+    sock = socket(AF_INET, SOCK_STREAM)  # Создать сокет TCP
+    sock.connect((server_ip, port))  # Соединиться с сервером
     while True:
         message = input('Enter you message: ')
         if message == 'exit':
             break
         data = json.dumps(gen_text_msg(username, message), indent=4, sort_keys=True, default=str)
-        s.send(data.encode('utf-8'))
+        sock.send(data.encode('utf-8'))
 
 
 if __name__ == '__main__':
